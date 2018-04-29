@@ -34,8 +34,7 @@ $(function () {
     it('URLs are defined and not empty', function () {
       allFeeds.forEach(feed => {
         const url = feed.url;
-        // No need to test if url is defined, because url.length will
-        // give an error anyway if the it is not defined
+        expect(url).toBeDefined();
         expect(url.length).toBeGreaterThan(0);
       })
     });
@@ -48,8 +47,7 @@ $(function () {
     it('names are defined and not empty', function () {
       allFeeds.forEach(feed => {
         const name = feed.name;
-        // No need to test if name is defined, because name.length will
-        // give an error anyway if the it is not defined
+        expect(name).toBeDefined();
         expect(name.length).toBeGreaterThan(0);
       })
     });
