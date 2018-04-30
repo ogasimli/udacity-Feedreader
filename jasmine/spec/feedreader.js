@@ -97,7 +97,7 @@ $(function () {
      * element withfix: in the .feed container.
      */
     it('at least single entry within container', function () {
-      expect($('.entry').length).toBeGreaterThan(0);
+      expect($('.feed .entry').length).toBeGreaterThan(0);
     });
   });
 
